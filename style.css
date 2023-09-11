@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: hsl(204, 43%, 93%);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    border-radius: 0.5rem;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.join {
+    grid-column: span 2;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.sub {
+    padding: 2rem;
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.why {
+    padding: 2rem;
+    background-color: hsla(179, 62%, 43%, 80%);
+    border-radius: 0 0 0.5rem 0;
+}
+
+.join__title {
+    font-size: 1.5rem;
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+.join__desc {
+    color: hsl(218, 22%, 67%);
+    width: 40rem;
+    
+}
+.join__desc--bold {
+    font-size: 1.25rem;
+    color: hsl(71, 73%, 54%);
+    margin-block: 1rem;
+    font-weight: 700;
+}
+
+.sub__title {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.sub__price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.sub__price__number {
+    color:white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.sub__price__label {
+    color: hsla(204, 43%, 93%, 50%);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.sub__desc {
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.sub__sign-up {
+    padding: 1rem;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor:pointer;
+    transition: 0.2s;
+}
+
+.sub__sign-up:hover {
+    opacity: 0.8;
+}
+
+.why__title {
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.why__desc {
+    margin-top: 1rem;
+    color: hsla(204, 43%, 93%, 80%);
+    width: 20rem;
+}
+
+@media (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .join {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    .sub {
+        border-radius: 0 0 0 0;
+    }
+    .why {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+    .join__desc {
+        max-width: 20rem;
+    }
+    .sub__sign-up {
+        max-width: 20rem;
+    }
+}
